@@ -1,0 +1,338 @@
+// mam-width
+$contenir-max-width: 1200px;
+$text-max-width: 427px;
+$text2-max-width: 380px;
+$text4-max-width: 952px;
+$text6-max-width: 266px;
+
+
+//max-height
+$text-max-height: 112px;
+
+
+// width
+$button-width: 200px;
+$chiziq-width: 56px;
+$turt-width: 350px;
+
+// height
+$button-height: 56px;
+$chiziq-height: 2px;
+$turt-height: 354px;
+
+//bg-color
+$button-background: rgba(69, 143, 246, 1);
+
+// gap
+$header-logo-gap: 10px;
+$nav-list-gap: 50px;
+
+//font-family
+$text-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+//margin
+$header-margin-top: -270px;
+$nav-list-margin-left: 550px;
+$img-margin-top: 150px;
+$img-margin-left: -700px;
+$text-margin-top: 150px;
+$text2-margin-top: 30px;
+$button-margin-top: 80px;
+$img2-margin-top: -470px;
+$img2-margin-left: 700px;
+$text4-margin-left: 120px;
+$img3-margin-left: -160px;
+$img3-margin-top: -150px;
+$chiziq-margin-left: 570px;
+$contenir2-margin-top: -450px;
+$ccontenir3-margin-top: -830px;
+$turt-margin-top: 80px;
+$frame-margin-top: 50px;
+$frame-margin-left: 50px;
+$button2-margin-top: 450px;
+$button2-margin-left: 470px;
+
+
+//font-size
+$nav-list-font-size: 18px;
+$text-font-size: 48px;
+$text3-font-size: 36px;
+$text6-font-size: 16px;
+
+//color
+$nav-link-color: black;
+$button-text-color: white;
+
+//weight
+$nav-link-font-weight: 600;
+$text-font-weight: 700;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.contenir{
+    max-width: $contenir-max-width;
+    padding: 0 0px;
+    margin: 0 auto;
+}
+.header{
+    padding: 35px 0px;
+    margin-top: $header-margin-top
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: $header-logo-gap;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: $text-font-family;
+    margin-left: $nav-list-margin-left;
+    gap: $nav-list-gap;
+    font-size: $nav-list-font-size;
+    
+}
+
+.nav__link{
+    text-decoration: none;
+    color: $nav-link-color;
+    opacity: 60%;
+}
+
+.nav__link2{
+    text-decoration: none;
+    color: $nav-link-color;
+    font-weight: $nav-link-font-weight;
+
+}
+
+.nav__item{
+    display: none;
+}
+
+.text{
+    max-width: $text-max-width;
+    max-height: $text-max-height;
+    font-weight: $text-font-weight;
+    font-size: $text-font-size;
+    font-family: $text-font-family;
+    margin-top: $text-margin-top;
+}
+
+.text2{
+    max-width: $text2-max-width;
+    font-size: $nav-list-font-size;
+    font-family: $text-font-family;
+    color: $nav-link-color;
+    margin-top: $text2-margin-top;
+    opacity: 60%;
+}
+
+.button{
+    border-radius: 180px;
+    width: $button-width;
+    height: $button-height;
+    color: $button-text-color;
+    border: $button-background;
+    font-size: $nav-list-font-size;
+    background: $button-background;
+    margin-top: $button-margin-top;
+}
+
+.img{
+    margin-top: $img-margin-top;
+}
+
+.img2{
+    margin-top: $img2-margin-top;
+    margin-left: $img2-margin-left;
+}
+
+.text3{
+    font-weight: $text-font-weight;
+    font-size: $text3-font-size;
+    font-family: $text-font-family;
+    margin-top: $text-margin-top;
+    text-align: center;
+}
+
+.text4{
+    max-width: $text4-max-width;
+    font-size: $nav-list-font-size;
+    font-family: $text-font-family;
+    color: $nav-link-color;
+    margin-top: $text2-margin-top;
+    margin-left: $text4-margin-left;
+    text-align: center;
+    opacity: 60%;
+}
+
+.chiziq{
+    width: $chiziq-width;
+    height: $chiziq-height;
+    background: $nav-link-color;
+    margin-left: $chiziq-margin-left;
+    margin-top: $text2-margin-top;
+}
+
+.img3{
+    margin-left: $img3-margin-left;
+    margin-top: $img3-margin-top;
+}
+
+.contenir2{
+    margin-top: $contenir2-margin-top;
+    display: flex;
+    align-items: center;
+    gap: $nav-list-gap;
+}
+
+.contenir3{
+    margin-top: $ccontenir3-margin-top;
+    display: flex;
+    align-items: center;
+    gap: $nav-list-gap;
+}
+
+.turt{
+    width: $turt-width;
+    height: $turt-height;
+    background: $button-text-color;
+    margin-top: $turt-margin-top;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.frame{
+    margin-left: $frame-margin-left;
+    margin-top: $frame-margin-top;
+}
+
+.text5{
+    color: $nav-link-color;
+    font-weight: $nav-link-font-weight;
+    font-family: $text-font-family;
+    font-size: 24px;
+    margin-left: $frame-margin-top;
+    margin-top: $text2-margin-top;
+}
+
+.text6{
+    max-width: $text6-max-width;
+    font-size: $text6-font-size;
+    font-family: $text-font-family;
+    color: $nav-link-color;
+    margin-top: $text2-margin-top;
+    margin-left: $frame-margin-left;
+    opacity: 60%;
+}
+
+.button2{
+    border-radius: 180px;
+    width: $button-width;
+    height: $button-height;
+    color: $button-background;
+    border: 2px solid $button-background;
+    font-size: $nav-list-font-size;
+    background: $button-text-color;
+    margin-top: $button2-margin-top;
+    margin-left: $button2-margin-left;
+}
+
+.img4{
+    margin-top: 200px;
+}
+
+.text7{
+    max-width: 481px;
+    max-height: 112px;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 800px;
+    margin-top: -430px;
+}
+.chiziq2{
+    width: $chiziq-width;
+    height: $chiziq-height;
+    background: $nav-link-color;
+    margin-left: 800px;
+    margin-top: $text2-margin-top;
+}
+
+.text8{
+    max-width: 450px;
+    max-height: 120px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 60%;
+    margin-left: 800px;
+    margin-top: 50px;
+}
+
+.button3{
+    border-radius: 180px;
+    width: $button-width;
+    height: $button-height;
+    color: $button-background;
+    border: 2px solid $button-background;
+    font-size: $nav-list-font-size;
+    background: $button-text-color;
+    margin-top: 50px;
+    margin-left: 800px;
+}
+
+.text9{
+    max-width: 254px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 180px;
+}
+
+.chiziq3{
+    width: $chiziq-width;
+    height: $chiziq-height;
+    background: $nav-link-color;
+    margin-top: 50px;
+}
+
+.text10{
+    max-width: 370px;
+    max-height: 120px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 60%;
+    margin-top: 50px;
+}
+
+.button4{
+    border-radius: 180px;
+    width: $button-width;
+    height: $button-height;
+    color: $button-background;
+    border: 2px solid $button-background;
+    font-size: $nav-list-font-size;
+    background: $button-text-color;
+    margin-top: 50px;
+}
+
+.img5{
+    margin-left: 300px;
+    margin-top: -500px;
+}
+
+.turt{
+    
+}
